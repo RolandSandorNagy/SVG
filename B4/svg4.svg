@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3//DTD SVG 1.1//EN"
+	"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns= "http://www.w3.org/2000/svg"
+     xmlns:xlink= "http://www.w3.org/1999/xlink"
+     version="1.1" width="800" height="450">
+
+<symbol id="mfEgyenlet">
+		<text id="masodfoku" style="font-family: arial black;0"
+		      x="220" y="80">ax + bx + c = 0</text>
+		<text id="kettes" style="font-family: arial black; font-size:0.5em;"
+		      x="240" y="70">2</text>
+</symbol>
+
+<symbol id="xonetwo">
+	<g>	
+		<text style="font-family: arial black; color: black;" opacity="1" x="20" y="20">x</text>
+		<text style="font-family: arial black; color: black; font-size: 0.5em;" opacity="1" x="30" y="25">1,2</text>
+	</g>
+</symbol>
+
+<symbol id="gyokJel">
+		<line x1="2" y1="27" x2="2" y2="7" stroke="black" />
+		<line x1="2" y1="27" x2="0" y2="12" stroke="black" />
+		<line x1="2" y1="7" x2="87" y2="7" stroke="black" />
+</symbol>
+ 
+<symbol id="megoldo">
+		
+		<use xlink:href="#xonetwo" x="120" y="230" />
+		<text style="font-family: arial black;" x="170" y="250">=</text>
+		<text style="font-family: arial black;"
+		      x="190" y="240"> - </text>
+		<text style="font-family: arial black;" x="200" y="240" opacity="1" > 
+			<animate id="megoldoA"
+					 attributeName="opacity"
+					 attributeType="XML"
+					 from="1" to="0"
+					 begin="Aanim31.end+2s" dur="1s"
+					 fill="freeze"/>
+		      b 
+		</text>
+		<text style="font-family: arial black;" x="215" y="237">+</text>
+		<text style="font-family: arial black;" x="218" y="244">-</text>
+		<use xlink:href="#gyokJel" x="230" y="215" />
+
+		<line x1="185" y1="245" x2="320" y2="245" stroke="black" />
+
+
+		<text style="font-family: arial black;" x="240" y="240" opacity="1"> 
+			<animate id="megoldoA"
+					 attributeName="opacity"
+					 attributeType="XML"
+					 from="1" to="0"
+					 begin="Aanim31.end+2s" dur="1s"
+					 fill="freeze"/>
+			b 
+		</text>
+		<text style="font-family: arial black; font-size:0.5em;" x="250" y="230">2</text>
+		<text style="font-family: arial black;" x="260" y="240"> - 4 </text>
+		<text style="font-family: arial black;" x="280" y="240" opacity="1"> 
+			<animate id="megoldoA"
+					 attributeName="opacity"
+					 attributeType="XML"
+					 from="1" to="0"
+					 begin="info4.end+2s" dur="1s"
+					 fill="freeze"/>
+			a 
+		</text>
+		<text style="font-family: arial black;" x="290" y="240" opacity="1"> 
+			<animate id="megoldoA"
+					 attributeName="opacity"
+					 attributeType="XML"
+					 from="1" to="0"
+					 begin="Banim21.end+2s" dur="1s"
+					 fill="freeze"/>
+			c 
+		</text>
+
+		<text style="font-family: arial black;"
+		      x="240" y="260"> 2 </text>		 
+		<text style="font-family: arial black;"
+		      x="250" y="260"> 
+			<animate id="megoldoA"
+					 attributeName="opacity"
+					 attributeType="XML"
+					 from="1" to="0"
+					 begin="info4.end+2s" dur="1s"
+					 fill="freeze"/>
+		      a 
+		  </text>		 
+
+</symbol>
+
+<symbol id="desc1">
+
+	<!--
+	<line x1="0" y1="0" x2="700" y2="0" style="fill: none; stroke: olive; stroke-width: 4; stroke-dasharray: 10,10,10,10; stroke-linecap: round;" />
+	<line x1="0" y1="0" x2="0" y2="500" stroke="black" />
+	<line x1="0" y1="500" x2="700" y2="500" style="fill: none; stroke: olive; stroke-width: 4; stroke-dasharray: 10,10,10,10; stroke-linecap: round;" />
+	<line x1="700" y1="0" x2="700" y2="500" stroke="black" />
+	-->
+	
+	<g>
+		<text id="feladat" style="font-family: arial black;"
+		      x="50" y="40">Másodfokú egyenletek megoldóképlete és annak használata:</text>
+		<use xlink:href="#mfEgyenlet" x="0" y="0"/>
+		<text style="font-family: arial black;"
+		      x="20" y="110">ahol az a,b,c együtthatók valamilyen valós számok, és x az ismeretlen.</text>
+		<text style="font-family: arial black;"
+		      x="20" y="140">Ekkor, mivel egy másodfokú polinomnak legfeljebb két gyöke lehet,</text> 
+		<text style="font-family: arial black;"
+		      x="20" y="160">ezért fel kell készülnünk arra, hogy a feladatnak két megoldása is lehet.</text>
+		<text style="font-family: arial black;"
+		      x="200" y="200">A megoldóképlet:</text>
+		<use xlink:href="#megoldo" x="60" y="20"/>
+	</g>
+</symbol>
+
+<symbol id="desc2">
+		
+		<line x1="0" y1="0" x2="800" y2="0" style="fill: none; stroke: olive; stroke-width: 4; stroke-dasharray: 10,10,10,10; stroke-linecap: round;" />
+		<line x1="0" y1="0" x2="0" y2="500" stroke="black" />
+		<line x1="0" y1="500" x2="800" y2="500" style="fill: none; stroke: olive; stroke-width: 4; stroke-dasharray: 10,10,10,10; stroke-linecap: round;" />
+		<line x1="800" y1="0" x2="800" y2="500" stroke="black" />
+
+		<text style="font-family: arial black;"
+		      x="20" y="20">Első példa:</text>		 
+		<text style="font-family: arial black;"
+		      x="235" y="20">x + 2x + 1 = 0</text>		 
+		<text style="font-family: arial black;" font-size="0.5em" x="245" y="10">2</text>		 
+		<text style="font-family: arial black;" opacity="0"
+		      x="225" y="20" stroke="blue">
+				<animate id="Aanim"
+						 attributeName="opacity"
+						 attributeType="XML"
+						 from="0" to="1"
+						 begin="info2.end" dur="3s"
+						 fill="freeze"/>
+				<animate id="Aanim2"
+						 attributeName="x"
+						 attributeType="XML"
+						 from="225" to="100"
+						 begin="Aanim.end+1s" dur="1s"
+						 fill="freeze"/>
+				<animate attributeName="y"
+						 attributeType="XML"
+						 from="20" to="120"
+						 begin="Aanim.end+1s" dur="1s"
+						 fill="freeze"/>
+		      1
+		</text>		 
+		<text style="font-family: arial black;" opacity="0"
+		      x="100" y="120" stroke="blue">
+				<animate attributeName="opacity"
+						 attributeType="XML"
+						 from="0" to="1"
+						 begin="info4.end" dur="1s"
+						 fill="freeze"/>
+				<animate id="Aanim31"
+						 attributeName="x"
+						 attributeType="XML"
+						 from="100" to="280"
+						 begin="info4.end+1s" dur="2s"
+						 fill="freeze"/>
+				<animate attributeName="y"
+						 attributeType="XML"
+						 from="120" to="240"
+						 begin="info4.end+1s" dur="2s"
+						 fill="freeze"/>
+		      1
+		</text>		 
+		<text style="font-family: arial black;" opacity="0"
+		      x="100" y="120" stroke="blue">
+				<animate attributeName="opacity"
+						 attributeType="XML"
+						 from="0" to="1"
+						 begin="info4.end" dur="1s"
+						 fill="freeze"/>
+				<animate attributeName="x"
+						 attributeType="XML"
+						 from="100" to="250"
+						 begin="info4.end+1s" dur="2s"
+						 fill="freeze"/>
+				<animate attributeName="y"
+						 attributeType="XML"
+						 from="120" to="260"
+						 begin="info4.end+1s" dur="2s"
+						 fill="freeze"/>
+		      1
+		</text>		 
+
+		<text style="font-family: arial black; color: blue;" opacity="0"
+		      x="220" y="80" stroke="blue">
+				<animate attributeName="opacity"
+						 attributeType="XML"
+						 from="0" to="1"
+						 begin="info2.end" dur="3s"
+						 fill="freeze"/>
+				<animate attributeName="x"
+						 attributeType="XML"
+						 from="220" to="60"
+						 begin="Aanim.end+1s" dur="1s"
+						 fill="freeze"/>
+				<animate attributeName="y"
+						 attributeType="XML"
+						 from="80" to="120"
+						 begin="Aanim.end+1s" dur="1s"
+						 fill="freeze"/>
+		      a
+		</text>		 
+		<text style="font-family: arial black; color: black;" opacity="0"
+		      x="80" y="120">
+				<animate attributeName="opacity"
+						 attributeType="XML"
+						 from="0" to="1"
+						 begin="Aanim2.end" dur="1s"
+						 fill="freeze"/>
+		      =
+		</text>		 
+
+		<text style="font-family: arial black;" opacity="0"
+		      x="265" y="20" stroke="red">
+				<animate id="Banim"
+						 attributeName="opacity"
+						 attributeType="XML"
+						 from="0" to="1"
+						 begin="Aanim.end" dur="3s"
+						 fill="freeze"/>
+				<animate id="Banim2"
+						 attributeName="x"
+						 attributeType="XML"
+						 from="265" to="100"
+						 begin="Banim.end+1s" dur="1s"
+						 fill="freeze"/>
+				<animate attributeName="y"
+						 attributeType="XML"
+						 from="20" to="140"
+						 begin="Banim.end+1s" dur="1s"
+						 fill="freeze"/>
+		      2
+		</text>		 
+		<text style="font-family: arial black;" opacity="0"
+		      x="100" y="140" stroke="red">
+				<animate attributeName="opacity"
+						 attributeType="XML"
+						 from="0" to="1"
+						 begin="Aanim31.end" dur="1s"
+						 fill="freeze"/>
+				<animate id="Banim21"
+						 attributeName="x"
+						 attributeType="XML"
+						 from="100" to="200"
+						 begin="Aanim31.end+1s" dur="2s"
+						 fill="freeze"/>
+				<animate attributeName="y"
+						 attributeType="XML"
+						 from="140" to="240"
+						 begin="Aanim31.end+1s" dur="2s"
+						 fill="freeze"/>
+		      2
+		</text>		 
+		<text style="font-family: arial black;" opacity="0"
+		      x="100" y="140" stroke="red">
+				<animate attributeName="opacity"
+						 attributeType="XML"
+						 from="0" to="1"
+						 begin="Aanim31.end" dur="1s"
+						 fill="freeze"/>
+				<animate attributeName="x"
+						 attributeType="XML"
+						 from="100" to="240"
+						 begin="Aanim31.end+1s" dur="2s"
+						 fill="freeze"/>
+				<animate attributeName="y"
+						 attributeType="XML"
+						 from="140" to="240"
+						 begin="Aanim31.end+1s" dur="2s"
+						 fill="freeze"/>
+		      2
+		</text>		 
+
+		<text style="font-family: arial black;" opacity="0"
+		      x="265" y="80" stroke="red">
+				<animate attributeName="opacity"
+						 attributeType="XML"
+						 from="0" to="1"
+						 begin="Aanim.end" dur="3s"
+						 fill="freeze"/>
+				<animate attributeName="x"
+						 attributeType="XML"
+						 from="265" to="60"
+						 begin="Banim.end+1s" dur="1s"
+						 fill="freeze"/>
+				<animate attributeName="y"
+						 attributeType="XML"
+						 from="80" to="140"
+						 begin="Banim.end+1s" dur="1s"
+						 fill="freeze"/>
+		      b
+		</text>		 
+		<text style="font-family: arial black; color: black;" opacity="0"
+		      x="80" y="140">
+				<animate attributeName="opacity"
+						 attributeType="XML"
+						 from="0" to="1"
+						 begin="Banim2.end" dur="1s"
+						 fill="freeze"/>
+		      =
+		</text>		 
+
+		<text style="font-family: arial black;" opacity="0"
+		      x="310" y="20" stroke="green">
+				<animate id="Canim"
+						 attributeName="opacity"
+						 attributeType="XML"
+						 from="0" to="1"
+						 begin="Banim.end" dur="3s"
+						 fill="freeze"/>
+				<animate id="Canim2"
+						 attributeName="x"
+						 attributeType="XML"
+						 from="310" to="100"
+						 begin="Canim.end+1s" dur="1s"
+						 fill="freeze"/>
+				<animate attributeName="y"
+						 attributeType="XML"
+						 from="20" to="160"
+						 begin="Canim.end+1s" dur="1s"
+						 fill="freeze"/>
+		      1
+		</text>		 
+		<text style="font-family: arial black;" opacity="0"
+		      x="100" y="160" stroke="green">
+				<animate attributeName="opacity"
+						 attributeType="XML"
+						 from="0" to="1"
+						 begin="Banim21.end" dur="1s"
+						 fill="freeze"/>
+				<animate id="Canim21"
+						 attributeName="x"
+						 attributeType="XML"
+						 from="100" to="290"
+						 begin="Banim21.end+1s" dur="2s"
+						 fill="freeze"
+						 onend="folytat5()" />
+				<animate attributeName="y"
+						 attributeType="XML"
+						 from="160" to="240"
+						 begin="Banim21.end+1s" dur="2s"
+						 fill="freeze"/>
+		      1
+		</text>		 
+
+		<text style="font-family: arial black;" opacity="0"
+		      x="307" y="80" stroke="green">
+				<animate id="Canim"
+						 attributeName="opacity"
+						 attributeType="XML"
+						 from="0" to="1"
+						 begin="Banim.end" dur="3s"
+						 fill="freeze"/>
+				<animate attributeName="x"
+						 attributeType="XML"
+						 from="307" to="60"
+						 begin="Canim.end+1s" dur="1s"
+						 fill="freeze"/>
+				<animate attributeName="y"
+						 attributeType="XML"
+						 from="80" to="160"
+						 begin="Canim.end+1s" dur="1s"
+						 fill="freeze"/>
+		      c
+		</text>		 
+		<text style="font-family: arial black; color: black;" opacity="0" x="80" y="160">
+				<animate id="utolsoAdat"
+						 attributeName="opacity"
+						 attributeType="XML"
+						 from="0" to="1"
+						 begin="Canim2.end" dur="1s"
+						 fill="freeze" 
+						 onend="folytat3()"/>
+		      =
+		</text>		 
+
+
+
+		<text style="font-family: arial black; color: black;" opacity="0" x="380" y="20">
+				<animate id="info1"
+						 attributeName="opacity"
+						 attributeType="XML"
+						 from="0" to="1"
+						 begin="btnIndit.click" dur="3s"
+						 fill="freeze" />
+		      Lássuk ezt az egyenletet. 
+		</text>		 
+		<text style="font-family: arial black; color: black;" opacity="0" x="380" y="40">
+				<animate id="info1"
+						 attributeName="opacity"
+						 attributeType="XML"
+						 from="0" to="1"
+						 begin="btnIndit.click" dur="3s"
+						 fill="freeze"
+						 onend="folytat1()" />
+		      Már nullára van rendezve a jobb oldal.
+		</text>		 
+
+		<text style="font-family: arial black; color: black;" opacity="0" x="380" y="80">
+				<animate attributeName="opacity"
+						 attributeType="XML"
+						 from="0" to="1"
+						 begin="btnFolytat.click" dur="3s"
+						 fill="freeze" 
+						 onend="folytat2()" />
+		      A másodfokú egyenlet általános felírása.
+		</text>		 
+
+		<text style="font-family: arial black; color: black;" opacity="0" x="130" y="140">
+				<animate id="info2"
+						 attributeName="opacity"
+						 attributeType="XML"
+						 from="0" to="1"
+						 begin="btnFolytat2.click" dur="3s"
+						 fill="freeze" />
+		      Gyűjtsük ki az adatokat !
+		</text>		 
+		<text style="font-family: arial black; color: black;" opacity="0" x="380" y="140">
+				<animate id="info3"
+						 attributeName="opacity"
+						 attributeType="XML"
+						 from="0" to="1"
+						 begin="btnFolytat3.click" dur="3s"
+						 fill="freeze" />
+		      Vegyük elő a megoldóképletet !
+		</text>		 
+		<text style="font-family: arial black; color: black;" opacity="0" x="130" y="180">
+				<animate id="info4"
+						 attributeName="opacity"
+						 attributeType="XML"
+						 from="0" to="1"
+						 begin="btnFolytat4.click" dur="3s"
+						 fill="freeze" />
+		      Behelyettesítünk.
+		</text>		 
+		<text style="font-family: arial black; color: black;" opacity="0" x="380" y="180">
+				<animate id="info5"
+						 attributeName="opacity"
+						 attributeType="XML"
+						 from="0" to="1"
+						 begin="btnFolytat5.click" dur="3s"
+						 fill="freeze" />
+		      Elvégezzük a műveleteket.
+		</text>		 
+
+
+		<text style="font-family: arial black; color: black;" opacity="0" x="380" y="390">
+				<animate id="info6"
+						 attributeName="opacity"
+						 attributeType="XML"
+						 from="0" to="1"
+						 begin="step4anim.end" dur="3s"
+						 fill="freeze" 
+						 onend="vegeGomb()" />
+		      Tehát az x értéke csak -1 lehet !
+		</text>		 
+
+
+		<use xlink:href="#mfEgyenlet" x="0" y="0" opacity="0" >
+				<animate id="mfEAnim"
+						 attributeName="opacity"
+						 attributeType="XML"
+						 from="0" to="1"
+						 begin="btnFolytat.click" dur="3s"
+						 fill="freeze"/>
+		</use>
+
+		<use xlink:href="#megoldo" x="0" y="0" opacity="0" style="color: orange" >
+				<animate id="megoldoAnim"
+						 attributeName="opacity"
+						 attributeType="XML"
+						 from="0" to="1"
+						 begin="info3.end" dur="3s"
+						 fill="freeze"
+						 onend="folytat4()" />			
+		</use>
+
+		<use id="step2" xlink:href="#step_2" x="320" y="205" opacity="0">
+			<animate id="step2anim"
+					 attributeName="opacity"
+					 attributeType="XML"
+					 from="0" to="1"
+					 begin="info5.end+1" dur="3s"
+					 fill="freeze"/>				
+		</use>
+
+		<use id="step3" xlink:href="#step_3" x="470" y="205" opacity="0">
+			<animate id="step3anim"
+					 attributeName="opacity"
+					 attributeType="XML"
+					 from="0" to="1"
+					 begin="step2anim.end+1" dur="3s"
+					 fill="freeze"/>				
+		</use>
+
+		<use id="step4" xlink:href="#step_4" x="550" y="205" opacity="0">
+			<animate id="step4anim"
+					 attributeName="opacity"
+					 attributeType="XML"
+					 from="0" to="1"
+					 begin="step3anim.end+1" dur="3s"
+					 fill="freeze"/>				
+		</use>
+
+
+</symbol>
+
+
+<symbol id="step_2"> 
+	<text style="font-family: arial black; color: black;" x="10" y="45">=</text>	
+	<text style="font-family: arial black; color: black;" x="30" y="35"> -2 </text>	
+	<text style="font-family: arial black; color: black;" x="70" y="35"> 4 </text>	
+	<text style="font-family: arial black; color: black;" x="100" y="35"> - </text>	
+	<text style="font-family: arial black; color: black;" x="130" y="35"> 4 </text>	
+	<use xlink:href="#gyokJel" x="62" y="10" />
+	<line x1="30" y1="40" x2="150" y2="40" stroke="black" />
+	<text style="font-family: arial black; color: black;" x="80" y="55">2</text>	
+	<text style="font-family: arial black;" x="49" y="32">+</text>
+	<text style="font-family: arial black;" x="52" y="39">-</text>
+</symbol>
+
+<symbol id="step_3"> 
+	<text style="font-family: arial black; color: black;" x="10" y="45">=</text>	
+	<text style="font-family: arial black; color: black;" x="30" y="35"> -2 </text>	
+	<text style="font-family: arial black; color: black;" x="65" y="35"> 0 </text>	
+	<line x1="30" y1="40" x2="80" y2="40" stroke="black" />
+	<text style="font-family: arial black; color: black;" x="50" y="55">2</text>	
+	<text style="font-family: arial black;" x="49" y="32">+</text>
+	<text style="font-family: arial black;" x="52" y="39">-</text>
+</symbol>
+
+<symbol id="step_4"> 
+	<text style="font-family: arial black; color: black;" x="10" y="45">=</text>	
+	<text style="font-family: arial black; color: black;" x="30" y="45"> -1 </text>	
+</symbol>
+
+
+<use id="page1" xlink:href="#desc1" x="0" y="0"/>
+<use id="page2" style="display:none" xlink:href="#desc2" x="0" y="0"/>
+
+<g id="btnTovabb">
+<rect x="50" y="360" width="100" height="50" fill="black" onclick="valtas(evt)" />
+<text id="txt" style="font-family: arial black;" x="70" y="390" stroke="white" onclick="valtas(evt)" >Tovább</text>		 
+</g>
+
+<g id="btnIndit" style="display:none;">
+	<rect id="negyzet" x="50" y="360" width="100" height="50" style="fill: red;" onclick="disableIndit(evt)" />
+	<text id="txt" style="font-family: arial black;" x="70" y="390" stroke="white" onclick="disableIndit(evt)" >Kezdés</text>
+</g>
+		 
+<g id="btnFolytat" style="display:none;">
+	<rect id="negyzet" x="50" y="360" width="100" height="50" style="fill: blue;" onclick="disableFolytat(evt)" />
+	<text id="txt" style="font-family: arial black;" x="60" y="390" stroke="white" onclick="disableFolytat(evt)" >Folytatás</text>
+</g>
+
+<g id="btnFolytat2" style="display:none;">
+	<rect id="negyzet" x="50" y="360" width="100" height="50" style="fill: blue;" onclick="disableFolytat2(evt)" />
+	<text id="txt" style="font-family: arial black;" x="60" y="390" stroke="white" onclick="disableFolytat2(evt)" >Folytatás</text>
+</g>
+
+<g id="btnFolytat3" style="display:none;">
+	<rect id="negyzet" x="50" y="360" width="100" height="50" style="fill: blue;" onclick="disableFolytat3(evt)" />
+	<text id="txt" style="font-family: arial black;" x="60" y="390" stroke="white" onclick="disableFolytat3(evt)" >Folytatás</text>
+</g>
+
+<g id="btnFolytat4" style="display:none;">
+	<rect id="negyzet" x="50" y="360" width="100" height="50" style="fill: blue;" onclick="disableFolytat4(evt)" />
+	<text id="txt" style="font-family: arial black;" x="60" y="390" stroke="white" onclick="disableFolytat4(evt)" >Folytatás</text>
+</g>
+
+<g id="btnFolytat5" style="display:none;">
+	<rect id="negyzet" x="50" y="360" width="100" height="50" style="fill: blue;" onclick="disableFolytat5(evt)" />
+	<text id="txt" style="font-family: arial black;" x="60" y="390" stroke="white" onclick="disableFolytat5(evt)" >Folytatás</text>
+</g>
+
+<g id="btnVege" style="display:none;">
+	<rect id="negyzet" x="50" y="360" width="100" height="50" style="fill: green;" onclick="vege(evt)" />
+	<text id="txt" style="font-family: arial black;" x="77" y="390" stroke="white" onclick="vege(evt)" >Vége</text>
+</g>
+
+
+<script type="text/ecmascript">
+	<![CDATA[
+
+	function valtas(evt)
+	{
+		document.getElementById("page1").style.display = "none";
+		document.getElementById("btnTovabb").style.display = "none";
+		document.getElementById("page2").style.display = "initial";
+		document.getElementById("btnIndit").style.display = "initial";
+	}
+
+	function disableIndit(evt)
+	{
+		document.getElementById("btnIndit").style.display = "none";
+	}
+
+	function disableFolytat(evt)
+	{
+		document.getElementById("btnFolytat").style.display = "none";
+	}
+
+	function disableFolytat2(evt)
+	{
+		document.getElementById("btnFolytat2").style.display = "none";
+	}
+
+	function disableFolytat3(evt)
+	{
+		document.getElementById("btnFolytat3").style.display = "none";
+	}
+
+	function disableFolytat4(evt)
+	{
+		document.getElementById("btnFolytat4").style.display = "none";
+	}
+
+	function disableFolytat5(evt)
+	{
+		document.getElementById("btnFolytat5").style.display = "none";
+	}
+
+	function vege(evt)
+	{
+		document.getElementById("page2").style.display = "none";
+		document.getElementById("btnVege").style.display = "none";
+		document.getElementById("page1").style.display = "initial";
+		document.getElementById("btnTovabb").style.display = "initial";
+	}
+
+	function folytat1(evt) {
+		document.getElementById("btnFolytat").style.display = "initial";
+	}
+
+	function folytat2(evt) {
+		document.getElementById("btnFolytat2").style.display = "initial";
+	}
+
+	function folytat3(evt) {
+		document.getElementById("btnFolytat3").style.display = "initial";
+	}
+
+	function folytat4(evt) {
+		document.getElementById("btnFolytat4").style.display = "initial";
+	}
+
+	function folytat5(evt) {
+		document.getElementById("btnFolytat5").style.display = "initial";
+	}
+
+	function vegeGomb(evt) {
+		document.getElementById("btnVege").style.display = "initial";
+	}
+
+	//]]>
+</script>
+
+
+</svg>

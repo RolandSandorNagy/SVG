@@ -1,0 +1,730 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE svg PUBLIC "-//W3//DTD SVG 1.1//EN"
+	"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns= "http://www.w3.org/2000/svg"
+     xmlns:xlink= "http://www.w3.org/1999/xlink"
+     version="1.1" width="1000" height="600">
+
+<g transform="scale(5,3)">
+
+ <symbol>	
+<path id="napGorbe" transform="translate(0,0)" d="M 0 0 q 60 0 170 180"  style="stroke: black; fill: none;"/>
+ </symbol>	
+
+ <symbol>	
+<path id="csillagGorbe" transform="translate(-240,10)" d="M 0 0 q 60 0 3650 860"
+      style="stroke: black; fill: none;"/>
+ </symbol>	
+
+<symbol id="nap">	
+<circle cx="25" cy="25" r="25" fill="yellow" />
+</symbol>	
+
+<symbol id="csillag">	
+<polyline points="48,16 16,96 96,48 0,48 80,96" transform="scale(0.1,0.1)" fill="white"/>
+</symbol>	
+
+<rect x="0" y="0" width="200" height="150" fill="white" stroke="none">
+	<animate id="esteAnim"	
+	attributeName= 	"fill" 	 
+  	attributeType= 	"CSS" 	 
+  	from= 	"white" 	 
+  	to= 	"grey" 	 
+  	begin= 	"1s"
+  	dur= 	"4s" 	 
+  	fill= 	"freeze" />
+</rect>
+
+<use xlink:href="#csillag" x="150" y="40">
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>
+</use>
+
+<use xlink:href="#csillag" x="75" y="10">
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>
+</use>
+
+<use xlink:href="#csillag" x="190" y="22">
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>
+</use>
+
+<use xlink:href="#csillag" x="10" y="67">
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>
+</use>
+
+<use xlink:href="#csillag" x="10" y="6">
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>
+</use>
+
+<use xlink:href="#csillag" x="230" y="6">
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>
+</use>
+
+<use xlink:href="#csillag" x="250" y="65">
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>
+</use>
+
+<use xlink:href="#csillag" x="290" y="35">
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>
+</use>
+
+<use xlink:href="#csillag" x="330" y="65">
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>
+</use>
+
+<use xlink:href="#csillag" x="385" y="105">
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>
+</use>
+
+<use xlink:href="#csillag" x="360" y="22">
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>
+</use>
+
+
+<use xlink:href="#nap">
+	<animateMotion id="napAnim" begin="1s" dur="5s" fill="freeze">
+		<mpath xlink:href="#napGorbe"/>
+	</animateMotion>
+</use>
+
+
+<use xlink:href="#csillag" x="-264" y="-14" >
+	<animateMotion id="csillagAnim" begin="napAnim.end+2s" dur="6s" fill="freeze" repeatDur="indefinite" values="-240,0,200,3650" keyTimes="0; 1; 1.4; 6">
+		<mpath xlink:href="#csillagGorbe"/>
+	</animateMotion>
+</use>
+
+
+
+		<!-- Kep keret -->
+		<line x1="0" y1="0" x2="200" y2="0" stroke-width="2" d="M5 60 l215 0"/>
+		<line x1="0" y1="0" x2="0" y2="200" stroke-width="2" d="M5 60 l215 0"/>
+		<line x1="0" y1="200" x2="200" y2="200" stroke-width="2" d="M5 60 l215 0"/>
+		<line x1="200" y1="0" x2="200" y2="200" stroke-width="2" d="M5 60 l215 0"/>
+		
+		<!-- Horizont -->
+		<rect x="0" y="150" width="200" height="50" fill="lightgreen" stroke="none" />
+
+
+	<use xlink:href="#kerites" x="140" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="150" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="160" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="170" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="180" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="190" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="200" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="210" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="220" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="230" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="240" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="250" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="260" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="270" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="280" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="290" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+
+
+<symbol id="haziko">	
+	<g fill="none" stroke="black">
+
+		<!-- Haziko -->
+		<rect x="100" y="125" width="50" height="50" fill="blue" stroke="none" />
+
+		<line x1="100" y1="125" x2="150" y2="125" stroke-width="2" d="M5 60 l215 0"/>
+		<line x1="100" y1="125" x2="100" y2="175" stroke-width="2" d="M5 60 l215 0"/>
+		<line x1="150" y1="125" x2="150" y2="175" stroke-width="2" d="M5 60 l215 0"/>
+		<line x1="100" y1="175" x2="150" y2="175" stroke-width="2" d="M5 60 l215 0"/>
+
+		<!-- Ajto -->
+		<rect x="130" y="155" width="10" height="20" stroke-width="2" fill="#9ba" />
+
+		<!-- Ablak -->
+		<rect x="110" y="140" width="10" height="10" stroke-width="2" fill="#875" >
+			<animate id="esteAnim"	
+			attributeName= 	"fill" 	 
+		  	attributeType= 	"CSS" 	 
+		  	from= 	"#875" 	 
+		  	to= 	"#eee" 	 
+		  	begin= 	"napAnim.end"
+		  	dur= 	"1ms" 	 
+		  	fill= 	"freeze" />
+		</rect>
+
+		<!-- Hazteto -->				
+		<polyline points="100,125 125,110 150,125" stroke-width="2" fill="purple"/>
+
+		<!-- Fust -->		
+		<line x1="108" y1="95" x2="108" y2="91" stroke-width="1" d="M5 60 l215 0" stroke="#ddd">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0, 0" to="0, -5"
+				  begin="0.4s" dur="1s"
+				  fill="remove"
+				  repeatDur="indefinite"/>
+
+		</line>
+		<line x1="114" y1="100" x2="114" y2="96" stroke-width="1" d="M5 60 l215 0" stroke="#ddd">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0, 0" to="0, -5"
+				  begin="0.2s" dur="1s"
+				  fill="remove"
+				  repeatDur="indefinite"/>
+
+		</line>
+		<line x1="118" y1="97" x2="118" y2="101" stroke-width="1" d="M5 60 l215 0" stroke="#ddd">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0, 0" to="0, -5"
+				  begin="0s" dur="1s"
+				  fill="remove"
+				  repeatDur="indefinite"/>
+
+		</line>
+	</g>
+</symbol>	
+
+	<!-- Kemeny-->				
+	<rect x="110" y="110" width="5" height="10">
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>
+	</rect>
+	<rect x="108" y="108" width="9" height="4">
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>
+	</rect>
+
+	
+	<use xlink:href="#haziko">
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>
+	</use>
+
+
+	<!-- fatörzs-->				
+	<rect x="65" y="120" width="5" height="40" fill="brown">
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>
+	</rect>
+	<!-- fa lomb-->				
+	<circle cx="67" cy="90" r="30" fill="green">
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>
+	</circle>
+
+
+	<rect x="202" y="160" width="65" height="30" fill="brown">
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>	
+	</rect>
+
+	<rect x="212" y="165" width="50" height="25" fill="black">
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>	
+	</rect>
+
+	<polygon points="200,160 214,140 255,140 269,160" fill="black" stroke="brown">
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>	
+	</polygon>
+
+
+	<!-- fatörzs 2 -->				
+	<rect x="185" y="140" width="8" height="50" fill="brown" stroke="1">
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>
+	</rect>
+	<!-- fa lomb 2 -->				
+	<circle cx="189" cy="120" r="40" fill="green">
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>
+	</circle>
+
+	<circle cx="159" cy="105" r="2" fill="red">
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>
+	</circle>
+
+	<circle cx="219" cy="123" r="2" fill="red">
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>
+	</circle>
+
+	<circle cx="193" cy="135" r="2" fill="red">
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>
+	</circle>
+
+	<symbol id="kerites" >
+	<rect x="0" y="0" width="11" height="1" fill="red" strike="none"/>
+
+	<rect x="1" y="1" width="1" height="5" fill="red" strike="none"/>
+	<rect x="3" y="1" width="1" height="5" fill="red" strike="none"/>
+	<rect x="5" y="1" width="1" height="5" fill="red" strike="none"/>
+	<rect x="7" y="1" width="1" height="5" fill="red" strike="none"/>
+	<rect x="9" y="1" width="1" height="5" fill="red" strike="none"/>
+	</symbol>
+
+
+	<symbol id="tehenke">
+		<ellipse cx="47" cy="175" rx="1" ry="4" fill="#ddd" />
+		<ellipse cx="55" cy="175" rx="1" ry="4" fill="#ddd" />
+
+		<ellipse cx="50" cy="170" rx="9" ry="6" fill="#999" />
+		<ellipse cx="56" cy="170" rx="3" ry="4" fill="#ddd" />
+		<circle cx="56" cy="168" r="4" fill="#ccc" />
+
+		<ellipse cx="45" cy="177" rx="1" ry="4" fill="#ddd" />
+		<ellipse cx="53" cy="177" rx="1" ry="4" fill="#ddd" />
+	</symbol>	
+
+	<use xlink:href="#kerites" x="300" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="310" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="320" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="330" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="340" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="350" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="360" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="370" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="380" y="150">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+
+
+	<use xlink:href="#tehenke" x="0" y="0">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="80"
+				  begin="1s" dur="5s"
+				  fill="freeze"/>
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="80" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+		
+	<use xlink:href="#tehenke" x="250" y="10">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+
+	<use xlink:href="#tehenke" x="300" y="-10">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+
+	<use xlink:href="#tehenke" x="320" y="-5">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+
+
+
+
+
+	<use xlink:href="#kerites" x="300" y="192">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="310" y="192">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="320" y="192">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="330" y="192">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="340" y="192">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="350" y="192">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="360" y="192">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="370" y="192">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+	<use xlink:href="#kerites" x="380" y="192">
+			<animateTransform id="tolasAnim" attributeType="XML"
+				  attributeName="transform"
+				  type="translate"
+				  from="0" to="-200"
+				  begin="napAnim.end+1s" dur="3s"
+				  fill="freeze"/>
+	</use>
+
+
+
+
+	<rect x="391" y="150" width="1" height="48" fill="red" stroke="none" >
+		<animateTransform id="tolasAnim" attributeType="XML"
+			  attributeName="transform"
+			  type="translate"
+			  from="0" to="-200"
+			  begin="napAnim.end+1s" dur="3s"
+			  fill="freeze"/>
+	</rect>
+
+
+</g>
+
+
+
+
+
+
+
+
+	<script type="text/javascript">
+			function playSound(fName) {
+			    var audio = new Audio(fName);
+	    		audio.play();                        
+			}
+			setTimeout(function () {
+				playSound('start.mp3');		
+			}, 7000);
+	</script>
+
+</svg>
+

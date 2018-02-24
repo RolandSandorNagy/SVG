@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3//DTD SVG 1.1//EN"
+	"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns= "http://www.w3.org/2000/svg"
+     xmlns:xlink= "http://www.w3.org/1999/xlink"
+     version="1.1" width="800" height="260">
+
+
+<symbol id="egyenlet">
+	<g>
+		<text style="font-family: arial black; color: black;" opacity="1" x="20" y="20"> 3 </text>
+		<circle cx="35" cy="15" r="2" />
+		<text style="font-family: arial black; color: black;" opacity="1" x="40" y="20"> x </text>
+		<text style="font-family: arial black; color: black;" opacity="1" x="60" y="20"> + </text>
+		<text style="font-family: arial black; color: black;" opacity="1" x="80" y="20"> 1 </text>
+		<text style="font-family: arial black; color: black;" opacity="1" x="100" y="20"> = </text>
+		<text style="font-family: arial black; color: black;" opacity="1" x="120" y="20"> 7 </text>
+	</g>
+</symbol>
+
+<symbol id="rendezes1">
+	<g>
+		<line x1="210" y1="25" x2="200" y2="5" stroke="black" />
+		<text style="font-family: arial black; color: black;" opacity="1" x="220" y="20"> - 1 </text>		
+	</g>
+</symbol>
+
+<symbol id="rendezes2">
+	<g>
+		<line x1="210" y1="65" x2="200" y2="45" stroke="black" />
+		<text style="font-family: arial black; color: black;" opacity="1" x="220" y="60"> : 3 </text>		
+	</g>
+</symbol>
+
+
+<use xlink:href="#egyenlet" x="0" y="0" />
+<g>
+	<text style="font-family: arial black; color: black;" opacity="1" x="20" y="20"> 
+		<animate id="lepes1anim"
+			 attributeName="y"
+			 attributeType="XML"
+			 from="20" to="60"
+			 begin="rendezes1anim.end+1s" dur="2s"
+			 fill="freeze"/>
+		<animateTransform attributeName="transform" 
+						  attributeType="XML" 
+						  type="scale" 
+						  from="1" to="0.5" 
+						  additive="sum" 
+						  begin="info3.end+1s" 
+						  dur="2s" 
+						  fill="freeze" />
+		<animate id="lepes1anim"
+			 attributeName="x"
+			 attributeType="XML"
+			 from="60" to="40"
+			 begin="info3.end+1s" dur="2s"
+			 fill="freeze"/>
+		<animate id="lepes1anim"
+			 attributeName="y"
+			 attributeType="XML"
+			 from="60" to="105"
+			 begin="info3.end+1s" dur="2s"
+			 fill="freeze"/>
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="utolsolepesanim.end+5s" dur="1s"
+			 fill="freeze"/>
+		3 
+	</text>
+	<circle cx="35" cy="15" r="2" >
+		<animate attributeName="cy"
+			 	 attributeType="XML"
+			 	 from="15" to="55"
+				 begin="rendezes1anim.end+1s" dur="2s"
+				 fill="freeze"/>
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="utolsolepesanim.end+5s" dur="1s"
+			 fill="freeze"/>
+	</circle>
+	<text style="font-family: arial black; color: black;" opacity="1" x="40" y="20"> 
+		<animate attributeName="y"
+			 	 attributeType="XML"
+			 	 from="20" to="60"
+				 begin="rendezes1anim.end+1s" dur="2s"
+				 fill="freeze"/>
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="utolsolepesanim.end+5s" dur="1s"
+			 fill="freeze"/>
+		x 
+	</text>
+	<text style="font-family: arial black; color: black;" x="60" y="20" opacity="0" > 
+		<animate attributeName="x"
+			 	 attributeType="XML"
+			 	 from="60" to="100"
+				 begin="rendezes1anim.end+1s" dur="2s"
+				 fill="freeze"/>
+		<animate attributeName="y"
+			 	 attributeType="XML"
+			 	 from="20" to="60"
+				 begin="rendezes1anim.end+1s" dur="2s"
+				 fill="freeze"/>
+		<animate attributeName="opacity"
+			 	 attributeType="XML"
+			 	 from="0" to="1"
+				 begin="rendezes1anim.end+2s" dur="1s"
+				 fill="freeze"/>
+		<animate id="lepes2anim"
+				 attributeName="x"
+			 	 attributeType="XML"
+			 	 from="100" to="80"
+				 begin="lepes1anim.end+1s" dur="2s"
+				 fill="freeze"/>
+		<animate attributeName="opacity"
+			 	 attributeType="XML"
+			 	 from="1" to="0"
+				 begin="lepes1anim.end+2s" dur="1s"
+				 fill="freeze"/>
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="utolsolepesanim.end+5s" dur="1s"
+			 fill="freeze"/>
+		- 
+	</text>
+	<text style="font-family: arial black; color: black;" x="60" y="20" opacity="1"> 
+		<animate attributeName="x"
+			 	 attributeType="XML"
+			 	 from="60" to="100"
+				 begin="rendezes1anim.end+1s" dur="2s"
+				 fill="freeze"/>
+		<animate attributeName="y"
+			 	 attributeType="XML"
+			 	 from="20" to="60"
+				 begin="rendezes1anim.end+1s" dur="2s"
+				 fill="freeze"/>
+		<animate attributeName="opacity"
+			 	 attributeType="XML"
+			 	 from="1" to="0"
+				 begin="rendezes1anim.end+2s" dur="1s"
+				 fill="freeze"/>
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="utolsolepesanim.end+5s" dur="1s"
+			 fill="freeze"/>
+		+ 
+	</text>
+	<text style="font-family: arial black; color: black;" opacity="1" x="80" y="20"> 
+		<animate attributeName="x"
+			 	 attributeType="XML"
+			 	 from="80" to="120"
+				 begin="rendezes1anim.end+1s" dur="2s"
+				 fill="freeze"/>
+		<animate attributeName="y"
+			 	 attributeType="XML"
+			 	 from="20" to="60"
+				 begin="rendezes1anim.end+1s" dur="2s"
+				 fill="freeze"/>
+		<animate attributeName="x"
+			 	 attributeType="XML"
+			 	 from="120" to="80"
+				 begin="lepes1anim.end+1s" dur="2s"
+				 fill="freeze"/>
+		<animate attributeName="opacity"
+			 	 attributeType="XML"
+			 	 from="1" to="0"
+				 begin="lepes1anim.end+2s" dur="1s"
+				 fill="freeze"/>
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="utolsolepesanim.end+5s" dur="1s"
+			 fill="freeze"/>
+		1 
+	</text>
+	<text style="font-family: arial black; color: black;" opacity="1" x="100" y="20"> 
+		<animate attributeName="x"
+				 attributeType="XML"
+				 from="100" to="60"
+				 begin="rendezes1anim.end+1s" dur="2s"
+				 fill="freeze"/>
+		<animate attributeName="y"
+				 attributeType="XML"
+				 from="20" to="60"
+				 begin="rendezes1anim.end+1s" dur="2s"
+				 fill="freeze"/>
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="utolsolepesanim.end+5s" dur="1s"
+			 fill="freeze"/>
+		= 
+	</text>
+	<text style="font-family: arial black; color: black;" opacity="1" x="120" y="20"> 
+		<animate attributeName="x"
+			 	 attributeType="XML"
+			 	 from="120" to="80"
+				 begin="rendezes1anim.end+1s" dur="2s"
+				 fill="freeze"/>
+		<animate attributeName="y"
+			 	 attributeType="XML"
+			 	 from="20" to="60"
+				 begin="rendezes1anim.end+1s" dur="2s"
+				 fill="freeze"/>
+		<animate attributeName="opacity"
+			 	 attributeType="XML"
+			 	 from="1" to="0"
+				 begin="lepes1anim.end+2s" dur="1s"
+				 fill="freeze"/>
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="utolsolepesanim.end+5s" dur="1s"
+			 fill="freeze"/>
+		7 
+	</text>
+	<text style="font-family: arial black; color: black;" opacity="0" x="80" y="60"> 
+		<animate attributeName="opacity"
+			 	 attributeType="XML"
+			 	 from="0" to="1"
+				 begin="lepes1anim.end+2s" dur="1s"
+				 fill="freeze"/>
+		<animateTransform attributeName="transform" 
+						  attributeType="XML" 
+						  type="scale" 
+						  from="1" to="0.5" 
+						  additive="sum" 
+						  begin="info3.end+1s" 
+						  dur="2s" 
+						  fill="freeze" />
+		<animate id="lepes1anim"
+			 attributeName="x"
+			 attributeType="XML"
+			 from="80" to="160"
+			 begin="info3.end+1s" dur="2s"
+			 fill="freeze"/>
+		<animate id="lepes1anim"
+			 attributeName="y"
+			 attributeType="XML"
+			 from="60" to="105"
+			 begin="info3.end+1s" dur="2s"
+			 fill="freeze"/>
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="utolsolepesanim.end+5s" dur="1s"
+			 fill="freeze"/>
+		6
+	</text>
+
+
+</g>
+	<text style="font-family: arial black; color: black;" opacity="0" x="20" y="60"> 3 </text>
+	<circle cx="35" cy="55" r="2" opacity="0" />
+	<text style="font-family: arial black; color: black;" opacity="0" x="40" y="60"> x </text>
+	<text style="font-family: arial black; color: black;" opacity="0" x="60" y="60"> = </text>
+	<text style="font-family: arial black; color: black;" opacity="0" x="80" y="60"> 6 </text>
+
+<g>
+
+
+</g>
+
+<use xlink:href="#rendezes1" x="0" y="0" opacity="0" >
+	<animate id="rendezes1anim"
+			 attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="info2.end" dur="2s"
+			 fill="freeze"/>
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="utolsolepesanim.end+5s" dur="1s"
+			 fill="freeze"/>
+</use>
+<use xlink:href="#rendezes2" x="0" y="0" opacity="0" >
+	<animate id="rendezes2anim"
+			 attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="info3.end" dur="2s"
+			 fill="freeze"/>
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="utolsolepesanim.end+5s" dur="1s"
+			 fill="freeze"/>
+</use>
+
+<text style="font-family: arial black; color: black;" opacity="0" x="230" y="60"> 
+	<animate id="lepes3anim"
+			 attributeName="x"
+			 attributeType="XML"
+			 from="230" to="40"
+			 begin="info3.end+1s" dur="2s"
+			 fill="freeze"/>
+	<animate attributeName="y"
+			 attributeType="XML"
+			 from="60" to="125"
+			 begin="info3.end+1s" dur="2s"
+			 fill="freeze"/>
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="info3.end" dur="1s"
+			 fill="freeze"/>
+	<animateTransform attributeName="transform" 
+					  attributeType="XML" 
+					  type="scale" 
+					  from="1" to="0.5" 
+					  additive="sum" 
+					  begin="info3.end+1s" 
+					  dur="2s" 
+					  fill="freeze" />
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="utolsolepesanim.end+5s" dur="1s"
+			 fill="freeze"/>
+	3 
+</text>		
+<text style="font-family: arial black; color: black;" opacity="0" x="230" y="60"> 
+	<animate attributeName="x"
+			 attributeType="XML"
+			 from="230" to="160"
+			 begin="info3.end+1s" dur="2s"
+			 fill="freeze"/>
+	<animate attributeName="y"
+			 attributeType="XML"
+			 from="60" to="125"
+			 begin="info3.end+1s" dur="2s"
+			 fill="freeze"/>
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="info3.end" dur="1s"
+			 fill="freeze"/>
+	<animateTransform attributeName="transform" 
+					  attributeType="XML" 
+					  type="scale" 
+					  from="1" to="0.5" 
+					  additive="sum" 
+					  begin="info3.end+1s" 
+					  dur="2s" 
+					  fill="freeze" />
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="utolsolepesanim.end+5s" dur="1s"
+			 fill="freeze"/>
+	3 
+</text>		
+<line x1="20" y1="55" x2="25" y2="55" stroke="black" opacity="0" >
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="info3.end+2s" dur="2s"
+			 fill="freeze"/>
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="utolsolepesanim.end+5s" dur="1s"
+			 fill="freeze"/>
+</line>
+<line x1="80" y1="55" x2="85" y2="55" stroke="black" opacity="0" >
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="info3.end+2s" dur="2s"
+			 fill="freeze"/>
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="utolsolepesanim.end+5s" dur="1s"
+			 fill="freeze"/>
+</line>
+
+<symbol id="vegsoForma">
+	<g>
+		<text style="font-family: arial black; color: black;" opacity="1" x="20" y="60"> 
+			<animate attributeName="opacity"
+					 attributeType="XML"
+					 from="0" to="1"
+					 begin="lepes3anim.end+2s" dur="2s"
+					 fill="freeze"/>
+			<animate attributeName="opacity"
+					 attributeType="XML"
+					 from="1" to="0"
+					 begin="utolsolepesanim.end+2s" dur="2s"
+					 fill="freeze"/>
+			1 
+		</text>
+		<circle cx="35" cy="55" r="2" opacity="0" >
+			<animate attributeName="opacity"
+					 attributeType="XML"
+					 from="0" to="1"
+					 begin="lepes3anim.end+2s" dur="2s"
+					 fill="freeze"/>
+			<animate attributeName="opacity"
+					 attributeType="XML"
+					 from="1" to="0"
+					 begin="utolsolepesanim.end+2s" dur="2s"
+					 fill="freeze"/>
+		</circle> 
+		<text style="font-family: arial black; color: black;" opacity="1" x="40" y="60"> x </text>
+		<text style="font-family: arial black; color: black;" opacity="1" x="60" y="60"> = </text>
+		<text style="font-family: arial black; color: black;" opacity="1" x="80" y="60"> 2 </text>	
+	</g>
+</symbol>
+
+<use xlink:href="#vegsoForma" x="0" y="0" opacity="0" >
+	<animate id="utolsolepesanim"
+			 attributeName="y"
+			 attributeType="XML"
+			 from="0" to="40"
+			 begin="lepes3anim.end+2s" dur="2s"
+			 fill="freeze" />	
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="lepes3anim.end+2s" dur="2s"
+			 fill="freeze"/>
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="utolsolepesanim.end+5s" dur="1s"
+			 fill="freeze"
+			 onend="apear(evt)" />
+</use>
+
+
+
+<text style="font-family: arial black; color: black;" x="300" y="20" opacity="0"> 
+	<animate id="info1"
+			 attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="btnStart.click" dur="2s"
+			 fill="freeze"/>
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="utolsolepesanim.end+5s" dur="1s"
+			 fill="freeze"/>
+	Nézzük ezt az elsőfokú egyenletet. 
+</text>
+
+<text style="font-family: arial black; color: black;" x="300" y="40" opacity="0"> 
+	<animate id="info2"
+			 attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="info1.end+1s" dur="2s"
+			 fill="freeze"/>
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="utolsolepesanim.end+5s" dur="1s"
+			 fill="freeze"/>
+	Először vonjunk ki mindkét oldalból 1-et. 
+</text>
+
+<text style="font-family: arial black; color: black;" x="300" y="60" opacity="0"> 
+	<animate id="info3"
+			 attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="lepes2anim.end+1s" dur="2s"
+			 fill="freeze"/>
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="utolsolepesanim.end+5s" dur="1s"
+			 fill="freeze"/>
+	Osszuk le mindkét oldalt 3-mal. 
+</text>
+
+<text style="font-family: arial black; color: black;" x="300" y="100" opacity="0"> 
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="utolsolepesanim.end+1s" dur="2s"
+			 fill="freeze"/>
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="utolsolepesanim.end+5s" dur="1s"
+			 fill="freeze"/>
+	Így megkapjuk, hogy az x értéke 2. 
+</text>
+
+<g id="btnStart" onclick="disapear(evt)" >
+	<rect x="60" y="200" width="100" height="40" fill="red" />
+	<text style="font-family: arial black; color: black;" x="80" y="225" stroke="white" > 
+		Kezdés
+	</text>
+</g>
+
+
+<script type="text/ecmascript">
+	<![CDATA[
+	function disapear(evt) {
+		document.getElementById("btnStart").style.display = "none";
+	}
+	function apear(evt) {
+		document.getElementById("btnStart").style.display = "initial";
+		//document.getElementById("btnStart").style.display = "none";
+	}
+	//]]>
+</script>
+
+
+</svg>
+
+
+
+
+
+
+
+
+
+

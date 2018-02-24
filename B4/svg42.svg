@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3//DTD SVG 1.1//EN"
+	"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns= "http://www.w3.org/2000/svg"
+     xmlns:xlink= "http://www.w3.org/1999/xlink"
+     version="1.1" width="800" height="600">
+
+    <!-- 							Alap								  -->
+ 	<text style="font-family: arial black; color: black;" x="20" y="20" > 
+		x + y = 7
+	</text>
+ 	<text style="font-family: arial black; color: black;" x="20" y="40" > 
+		x - y = 3
+	</text>
+	<line x1="20" y1="49" x2="100" y2="49" stroke="black" stroke-width="5" />
+ 	<text style="font-family: arial black; color: black; font-size: 55px; font-weight: 100;" x="100" y="40" stroke-width="1" > 
+		}
+	</text>
+    <!-- /////////////////////////////////////////////////////////////// -->
+
+
+    <!-- 							0  								 	 -->
+ 	<text style="font-family: arial black; color: red;" x="130" y="30" stroke-width="1" stroke="red" opacity="0" >
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="btnStart2.click" dur="2s"
+			 fill="freeze" 
+			 onend="folytat1()" /> 	 
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="ujra.click" dur="2s"
+			 fill="freeze" 
+			 onend="apearStart()" /> 	 
+		Vizsgáljuk meg ezt a két ismeretlenes egyenlet rendszert!
+	</text>
+    <!-- /////////////////////////////////////////////////////////////// -->
+
+    <!-- 							1  								 	 -->
+ 	<text style="font-family: arial black; color: black;" x="20" y="80" stroke="blue" opacity="0" > 
+	<animate id="elso"
+			 attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="folytat1.click" dur="2s"
+			 fill="freeze" /> 	 
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="ujra.click" dur="2s"
+			 fill="freeze" /> 	 
+		Az első egyenletből kifejezzük az egyik ismeretlent, mondjuk y-t:
+	</text>
+ 	<text style="font-family: arial black; color: black;" x="200" y="110" opacity="0" > 
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="elso.end" dur="2s"
+			 fill="freeze" 
+			 onend="folytat2()" /> 	 
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="ujra.click" dur="2s"
+			 fill="freeze" /> 	 
+		y = 7 - x
+	</text>
+    <!-- /////////////////////////////////////////////////////////////// -->
+
+    <!-- 							2  								 	 -->
+ 	<text style="font-family: arial black; color: black;" x="20" y="140" stroke="blue" opacity="0" > 
+	<animate id="masodik"
+			 attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="folytat2.click" dur="2s"
+			 fill="freeze" /> 	 
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="ujra.click" dur="2s"
+			 fill="freeze" /> 	 
+		Az így kifejezett y-t behelyettesítjük a második egyenletbe:
+	</text>
+ 	<text style="font-family: arial black; color: black;" x="200" y="170" opacity="0" > 
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="masodik.end" dur="2s"
+			 fill="freeze" 
+			 onend="folytat3()" /> 	 
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="ujra.click" dur="2s"
+			 fill="freeze" /> 	 
+		x - (7 - x) = 3
+	</text>
+    <!-- /////////////////////////////////////////////////////////////// -->
+
+    <!-- 							3  								 	 -->
+ 	<text style="font-family: arial black; color: black;" x="20" y="200" stroke="blue" opacity="0" > 
+	<animate id="harmadik"
+			 attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="folytat3.click" dur="2s"
+			 fill="freeze" /> 	 
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="ujra.click" dur="2s"
+			 fill="freeze" /> 	 
+		Felbontjuk a zárójelet, összevonunk és hozzáadunk mindkét oldalhoz 7-t:
+	</text>
+ 	<text style="font-family: arial black; color: black;" x="200" y="230" opacity="0" > 
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="harmadik.end" dur="2s"
+			 fill="freeze" 
+			 onend="folytat4()" /> 	 
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="ujra.click" dur="2s"
+			 fill="freeze" /> 	 
+		x - 7 + x = 3
+	</text>
+    <!-- /////////////////////////////////////////////////////////////// -->
+
+    <!-- 							4  								 	 -->
+ 	<text style="font-family: arial black; color: black;" x="20" y="260" stroke="blue" opacity="0" > 
+	<animate id="negyedik"
+			 attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="folytat4.click" dur="2s"
+			 fill="freeze" /> 	 
+		Elosztjuk mindkét oldalt 2-vel:
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="ujra.click" dur="2s"
+			 fill="freeze" /> 	 
+	</text>
+ 	<text style="font-family: arial black; color: black;" x="200" y="290" opacity="0" > 
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="negyedik.end" dur="2s"
+			 fill="freeze" 
+			 onend="folytat5()" /> 	 
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="ujra.click" dur="2s"
+			 fill="freeze" /> 	 
+		2x = 10
+	</text>
+    <!-- /////////////////////////////////////////////////////////////// -->
+
+    <!-- 							5  								 	 -->
+ 	<text style="font-family: arial black; color: black;" x="20" y="320" stroke="blue" opacity="0" > 
+	<animate id="otodik"
+			 attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="folytat5.click" dur="2s"
+			 fill="freeze" /> 	 
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="ujra.click" dur="2s"
+			 fill="freeze" /> 	 
+		Megkapjuk x értékét:
+	</text>
+ 	<text style="font-family: arial black; color: black;" x="200" y="350" opacity="0" > 
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="otodik.end" dur="2s"
+			 fill="freeze" 
+			 onend="folytat6()" /> 	 
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="ujra.click" dur="2s"
+			 fill="freeze" /> 	 
+		x = 5
+	</text>
+    <!-- /////////////////////////////////////////////////////////////// -->
+
+    <!-- 							6  								 	 -->
+ 	<text style="font-family: arial black; color: black;" x="20" y="380" stroke="blue" opacity="0" > 
+	<animate id="hatodik"
+			 attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="folytat6.click" dur="2s"
+			 fill="freeze" /> 	 
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="ujra.click" dur="2s"
+			 fill="freeze" /> 	 
+		Az x-et visszahelyettesítjük az első egyenletbe:
+	</text>
+ 	<text style="font-family: arial black; color: black;" x="200" y="410" opacity="0" > 
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="hatodik.end" dur="2s"
+			 fill="freeze" 
+			 onend="folytat7()" /> 	 
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="ujra.click" dur="2s"
+			 fill="freeze" /> 	 
+		5 + y = 7
+	</text>
+    <!-- /////////////////////////////////////////////////////////////// -->
+
+    <!-- 							7  								 	 -->
+ 	<text style="font-family: arial black; color: black;" x="20" y="440" stroke="blue" opacity="0" > 
+	<animate id="hetedik"
+			 attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="folytat7.click" dur="2s"
+			 fill="freeze" /> 	 
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="ujra.click" dur="2s"
+			 fill="freeze" /> 	 
+		Mindkét oldalból kivonunk 5-öt, és megkapjuk y értékét is:
+	</text>
+ 	<text style="font-family: arial black; color: black;" x="200" y="470" opacity="0" > 
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="0" to="1"
+			 begin="hetedik.end" dur="2s"
+			 fill="freeze"
+			 onend="ujra()" /> 	 
+	<animate attributeName="opacity"
+			 attributeType="XML"
+			 from="1" to="0"
+			 begin="ujra.click" dur="2s"
+			 fill="freeze" /> 	 
+		y = 2
+	</text>
+    <!-- /////////////////////////////////////////////////////////////// -->
+
+
+<g id="btnStart2" onclick="disapearStart(evt)" >
+	<rect x="400" y="500" width="100" height="40" fill="red" />
+	<text style="font-family: arial black; color: black;" x="420" y="525" stroke="white" > 
+		Kezdés
+	</text>
+</g>
+
+<g id="folytat1" onclick="disapearFolytat1(evt)" style="display:none" >
+	<rect x="400" y="500" width="100" height="40" fill="blue" />
+	<text style="font-family: arial black; color: black;" x="420" y="525" stroke="white" > 
+		Tovább
+	</text>
+</g>
+
+<g id="folytat2" onclick="disapearFolytat2(evt)" style="display:none" >
+	<rect x="400" y="500" width="100" height="40" fill="blue" />
+	<text style="font-family: arial black; color: black;" x="420" y="525" stroke="white" > 
+		Tovább
+	</text>
+</g>
+
+<g id="folytat3" onclick="disapearFolytat3(evt)" style="display:none" >
+	<rect x="400" y="500" width="100" height="40" fill="blue" />
+	<text style="font-family: arial black; color: black;" x="420" y="525" stroke="white" > 
+		Tovább
+	</text>
+</g>
+<g id="folytat4" onclick="disapearFolytat4(evt)" style="display:none" >
+	<rect x="400" y="500" width="100" height="40" fill="blue" />
+	<text style="font-family: arial black; color: black;" x="420" y="525" stroke="white" > 
+		Tovább
+	</text>
+</g>
+<g id="folytat5" onclick="disapearFolytat5(evt)" style="display:none" >
+	<rect x="400" y="500" width="100" height="40" fill="blue" />
+	<text style="font-family: arial black; color: black;" x="420" y="525" stroke="white" > 
+		Tovább
+	</text>
+</g>
+<g id="folytat6" onclick="disapearFolytat6(evt)" style="display:none" >
+	<rect x="400" y="500" width="100" height="40" fill="blue" />
+	<text style="font-family: arial black; color: black;" x="420" y="525" stroke="white" > 
+		Tovább
+	</text>
+</g>
+<g id="folytat7" onclick="disapearFolytat7(evt)" style="display:none" >
+	<rect x="400" y="500" width="100" height="40" fill="blue" />
+	<text style="font-family: arial black; color: black;" x="420" y="525" stroke="white" > 
+		Tovább
+	</text>
+</g>
+<g id="ujra" onclick="disapearUjra(evt)" style="display:none" >
+	<rect x="400" y="500" width="100" height="40" fill="green" />
+	<text style="font-family: arial black; color: black;" x="430" y="525" stroke="white" > 
+		Újra
+	</text>
+</g>
+
+
+<script type="text/ecmascript">
+	<![CDATA[
+	function apearStart(evt) {
+		document.getElementById("btnStart2").style.display = "initial";
+	}
+	function disapearStart(evt) {
+		document.getElementById("btnStart2").style.display = "none";
+	}
+	function folytat1() {
+		document.getElementById("folytat1").style.display = "initial";	
+	}
+	function disapearFolytat1() {
+		document.getElementById("folytat1").style.display = "none";	
+	}
+	function folytat2() {
+		document.getElementById("folytat2").style.display = "initial";	
+	}
+	function disapearFolytat2() {
+		document.getElementById("folytat2").style.display = "none";	
+	}
+	function folytat3() {
+		document.getElementById("folytat3").style.display = "initial";	
+	}
+	function disapearFolytat3() {
+		document.getElementById("folytat3").style.display = "none";	
+	}
+	function folytat4() {
+		document.getElementById("folytat4").style.display = "initial";	
+	}
+	function disapearFolytat4() {
+		document.getElementById("folytat4").style.display = "none";	
+	}
+	function folytat5() {
+		document.getElementById("folytat5").style.display = "initial";	
+	}
+	function disapearFolytat5() {
+		document.getElementById("folytat5").style.display = "none";	
+	}
+	function folytat6() {
+		document.getElementById("folytat6").style.display = "initial";	
+	}
+	function disapearFolytat6() {
+		document.getElementById("folytat6").style.display = "none";	
+	}
+	function folytat7() {
+		document.getElementById("folytat7").style.display = "initial";	
+	}
+	function disapearFolytat7() {
+		document.getElementById("folytat7").style.display = "none";	
+	}
+	function ujra() {
+		document.getElementById("ujra").style.display = "initial";	
+	}
+	function disapearUjra() {
+		document.getElementById("ujra").style.display = "none";	
+	}
+	//]]>
+</script>
+
+</svg>

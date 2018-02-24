@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE svg PUBLIC "-//W3//DTD SVG 1.1//EN"
+	"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns= "http://www.w3.org/2000/svg"
+     xmlns:xlink= "http://www.w3.org/1999/xlink"
+     version="1.1" width="200" height="200">
+
+	<!--
+	<rect x="100" y="145" width="30" height="20"/>
+	<rect x="100" y="125" width="10" height="20"/>
+	<rect x="120" y="125" width="10" height="20"/>
+	<rect x="110" y="125" width="10" height="10"/>
+	<rect x="130" y="125" width="20" height="20"/>
+	<rect x="140" y="145" width="10" height="20"/>
+
+	<rect x="130" y="163" width="10" height="2"/>
+	<rect x="132" y="152" width="3" height="2"/>
+
+	<rect x="113" y="135" width="4" height="10"/>
+	<rect x="110" y="138" width="10" height="4"/>
+	-->
+
+	<g fill="none" stroke="black">
+
+		<!-- Kep keret -->
+		<line x1="0" y1="0" x2="200" y2="0" stroke-width="2" d="M5 60 l215 0"/>
+		<line x1="0" y1="0" x2="0" y2="200" stroke-width="2" d="M5 60 l215 0"/>
+		<line x1="0" y1="200" x2="200" y2="200" stroke-width="2" d="M5 60 l215 0"/>
+		<line x1="200" y1="0" x2="200" y2="200" stroke-width="2" d="M5 60 l215 0"/>
+		
+		<!-- Horizont -->
+		<line x1="150" y1="150" x2="200" y2="150" stroke-width="2" d="M5 60 l215 0"/>
+		<line x1="0" y1="150" x2="100" y2="150" stroke-width="2" d="M5 60 l215 0"/>
+
+		<!-- Haziko -->
+		<line x1="100" y1="125" x2="150" y2="125" stroke-width="2" d="M5 60 l215 0"/>
+		<line x1="100" y1="125" x2="100" y2="175" stroke-width="2" d="M5 60 l215 0"/>
+		<line x1="150" y1="125" x2="150" y2="175" stroke-width="2" d="M5 60 l215 0"/>
+		<line x1="100" y1="175" x2="150" y2="175" stroke-width="2" d="M5 60 l215 0"/>
+
+		<!-- Ajto -->
+		<rect x="130" y="155" width="10" height="20" stroke-width="2"/>
+
+		<!-- Ablak -->
+		<rect x="110" y="140" width="10" height="10" stroke-width="2"/>
+
+		<!-- Hazteto -->				
+		<polyline points="100,125 125,110 150,125" stroke-width="2"/>
+
+		<!-- Fust -->		
+		<line x1="108" y1="95" x2="108" y2="91" stroke-width="1" d="M5 60 l215 0"/>
+		<line x1="114" y1="100" x2="114" y2="96" stroke-width="1" d="M5 60 l215 0"/>
+		<line x1="118" y1="97" x2="118" y2="101" stroke-width="1" d="M5 60 l215 0"/>
+	</g>
+
+	<!-- Kemeny-->				
+	<rect x="110" y="110" width="5" height="10"/>
+	<rect x="108" y="108" width="9" height="4"/>
+
+	<rect x="65" y="120" width="5" height="40"/>
+
+	<circle cx="65" cy="90" r="30"/>
+
+</svg>
+
